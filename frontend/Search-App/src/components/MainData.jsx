@@ -22,7 +22,7 @@ const MainData = ({ que, quantity }) => {
 
     async function getData(searchQuery, quantity1) {
         setLoading(true);
-        const res = await axios.post('https://searchsphere.onrender.com', {
+        const res = await axios.post('https://searchsphere.onrender.com/specific-que', {
             query: searchQuery,
             limit1: quantity1,
         });
